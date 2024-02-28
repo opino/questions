@@ -1,0 +1,439 @@
+- question: "Was ist die Hauptstadt von Ägypten?"
+  options:
+    - "Kairo"
+    - "Algier"
+    - "Tripolis"
+    - "Nairobi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Nigeria?"
+  options:
+    - "Abuja"
+    - "Lagos"
+    - "Kano"
+    - "Ibadan"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Südafrika?"
+  options:
+    - "Pretoria"
+    - "Johannesburg"
+    - "Kapstadt"
+    - "Durban"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Algerien?"
+  options:
+    - "Algier"
+    - "Tunis"
+    - "Kairo"
+    - "Rabat"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Marokko?"
+  options:
+    - "Rabat"
+    - "Algier"
+    - "Kairo"
+    - "Tunis"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Kenia?"
+  options:
+    - "Nairobi"
+    - "Dar es Salaam"
+    - "Kigali"
+    - "Addis Abeba"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Äthiopien?"
+  options:
+    - "Addis Abeba"
+    - "Nairobi"
+    - "Kigali"
+    - "Kampala"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Ghana?"
+  options:
+    - "Accra"
+    - "Abuja"
+    - "Lagos"
+    - "Kumasi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Tunesien?"
+  options:
+    - "Tunis"
+    - "Algier"
+    - "Rabat"
+    - "Kairo"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Tansania?"
+  options:
+    - "Dodoma"
+    - "Dar es Salaam"
+    - "Kigali"
+    - "Nairobi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Uganda?"
+  options:
+    - "Kampala"
+    - "Nairobi"
+    - "Dar es Salaam"
+    - "Kigali"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Kamerun?"
+  options:
+    - "Yaoundé"
+    - "Douala"
+    - "Abuja"
+    - "Bamako"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Angola?"
+  options:
+    - "Luanda"
+    - "Maputo"
+    - "Brazzaville"
+    - "Kinshasa"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Sudan?"
+  options:
+    - "Khartum"
+    - "Kigali"
+    - "Juba"
+    - "Kampala"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Mosambik?"
+  options:
+    - "Maputo"
+    - "Luanda"
+    - "Nairobi"
+    - "Harare"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Sambia?"
+  options:
+    - "Lusaka"
+    - "Harare"
+    - "Maputo"
+    - "Windhoek"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Simbabwe?"
+  options:
+    - "Harare"
+    - "Lusaka"
+    - "Pretoria"
+    - "Maputo"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Niger?"
+  options:
+    - "Niamey"
+    - "Bamako"
+    - "N'Djamena"
+    - "Brazzaville"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Mali?"
+  options:
+    - "Bamako"
+    - "Niamey"
+    - "N'Djamena"
+    - "Ouagadougou"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Burkina Faso?"
+  options:
+    - "Ouagadougou"
+    - "Bamako"
+    - "Niamey"
+    - "N'Djamena"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Tschad?"
+  options:
+    - "N'Djamena"
+    - "Niamey"
+    - "Ouagadougou"
+    - "Bamako"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Guinea?"
+  options:
+    - "Conakry"
+    - "Bissau"
+    - "Banjul"
+    - "Praia"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Ruanda?"
+  options:
+    - "Kigali"
+    - "Nairobi"
+    - "Dar es Salaam"
+    - "Kampala"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Benin?"
+  options:
+    - "Porto-Novo"
+    - "Cotonou"
+    - "Lomé"
+    - "Accra"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Togo?"
+  options:
+    - "Lomé"
+    - "Accra"
+    - "Cotonou"
+    - "Porto-Novo"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Sierra Leone?"
+  options:
+    - "Freetown"
+    - "Monrovia"
+    - "Banjul"
+    - "Conakry"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Liberia?"
+  options:
+    - "Monrovia"
+    - "Freetown"
+    - "Banjul"
+    - "Conakry"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Malawi?"
+  options:
+    - "Lilongwe"
+    - "Lusaka"
+    - "Maputo"
+    - "Harare"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Guinea-Bissau?"
+  options:
+    - "Bissau"
+    - "Conakry"
+    - "Banjul"
+    - "Praia"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Madagaskar?"
+  options:
+    - "Antananarivo"
+    - "Maputo"
+    - "Nairobi"
+    - "Pretoria"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Mauritius?"
+  options:
+    - "Port Louis"
+    - "Victoria"
+    - "Mbabane"
+    - "Gaborone"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Somalia?"
+  options:
+    - "Mogadischu"
+    - "Hargeysa"
+    - "Dschibuti"
+    - "Nairobi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Äquatorialguinea?"
+  options:
+    - "Malabo"
+    - "Libreville"
+    - "Yaoundé"
+    - "Bata"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Lesotho?"
+  options:
+    - "Maseru"
+    - "Mbabane"
+    - "Gaborone"
+    - "Pretoria"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Gambia?"
+  options:
+    - "Banjul"
+    - "Conakry"
+    - "Bissau"
+    - "Praia"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Gabun?"
+  options:
+    - "Libreville"
+    - "Malabo"
+    - "Yaoundé"
+    - "Bata"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Guinea?"
+  options:
+    - "Conakry"
+    - "Bissau"
+    - "Banjul"
+    - "Praia"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Swasiland?"
+  options:
+    - "Mbabane"
+    - "Maseru"
+    - "Pretoria"
+    - "Gaborone"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Namibia?"
+  options:
+    - "Windhoek"
+    - "Pretoria"
+    - "Gaborone"
+    - "Maseru"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Botswana?"
+  options:
+    - "Gaborone"
+    - "Pretoria"
+    - "Windhoek"
+    - "Maseru"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Dschibuti?"
+  options:
+    - "Dschibuti"
+    - "Mogadischu"
+    - "Hargeysa"
+    - "Nairobi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Kap Verde?"
+  options:
+    - "Praia"
+    - "Banjul"
+    - "Conakry"
+    - "Bissau"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von São Tomé und Príncipe?"
+  options:
+    - "São Tomé"
+    - "Malabo"
+    - "Libreville"
+    - "Yaoundé"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Seychellen?"
+  options:
+    - "Victoria"
+    - "Port Louis"
+    - "Mbabane"
+    - "Gaborone"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Komoren?"
+  options:
+    - "Moroni"
+    - "Dschibuti"
+    - "Mogadischu"
+    - "Hargeysa"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Eritrea?"
+  options:
+    - "Asmara"
+    - "Dschibuti"
+    - "Mogadischu"
+    - "Hargeysa"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Zentralafrikanische Republik?"
+  options:
+    - "Bangui"
+    - "Libreville"
+    - "Yaoundé"
+    - "Bata"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Republik Kongo?"
+  options:
+    - "Brazzaville"
+    - "Malabo"
+    - "Libreville"
+    - "Yaoundé"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Demokratische Republik Kongo?"
+  options:
+    - "Kinshasa"
+    - "Brazzaville"
+    - "Malabo"
+    - "Libreville"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Südsudan?"
+  options:
+    - "Juba"
+    - "Khartum"
+    - "Kigali"
+    - "Kampala"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Swasiland?"
+  options:
+    - "Mbabane"
+    - "Maseru"
+    - "Gaborone"
+    - "Pretoria"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Mauritius?"
+  options:
+    - "Port Louis"
+    - "Victoria"
+    - "Mbabane"
+    - "Gaborone"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Somalia?"
+  options:
+    - "Mogadischu"
+    - "Hargeysa"
+    - "Dschibuti"
+    - "Nairobi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Somalia?"
+  options:
+    - "Mogadischu"
+    - "Hargeysa"
+    - "Dschibuti"
+    - "Nairobi"
+  answer: 1
+
+- question: "Was ist die Hauptstadt von Somalia?"
+  options:
+    - "Mogadischu"
+    - "Hargeysa"
+    - "Dschibuti"
+    - "Nairobi"
+  answer: 1
