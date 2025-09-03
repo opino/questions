@@ -1,0 +1,82 @@
+description: "10 LPCI Testfragen"
+questions:
+- question: "Welche Datei wird verwendet, um Dienste beim Booten mit systemd automatisch zu starten?"
+  options:
+    - "/etc/init.d/rc.local"
+    - "/etc/systemd/system/default.target"
+    - "/etc/systemd/system/*.service"
+    - "/etc/init.d/default.target"
+  answer: 3
+
+- question: "Was bewirkt der folgende Befehl? chmod 2755 myfile"
+  options:
+    - "Setzt das SUID-Bit auf myfile"
+    - "Setzt das SGID-Bit auf myfile"
+    - "Setzt Sticky-Bit und macht die Datei schreibgeschützt"
+    - "Entfernt alle Sonderrechte und erlaubt nur Ausführung"
+  answer: 2
+
+- question: "Welcher der folgenden Befehle zeigt alle installierten Pakete auf einem Debian-basierten System an?"
+  options:
+    - "yum list installed"
+    - "apt list --installed"
+    - "dpkg --configure"
+    - "apt-get show all"
+  answer: 2
+
+- question: "Was ist die Funktion von /etc/nsswitch.conf?"
+  options:
+    - "Konfiguriert DNS-Zonen für Bind"
+    - "Steuert, wie Benutzerkennwörter gespeichert werden"
+    - "Definiert die Reihenfolge der Namensauflösung"
+    - "Legt Standardshells für Benutzer fest"
+  answer: 3
+
+- question: "Welcher Befehl zeigt die aktuelle Runlevel-Äquivalente unter systemd an?"
+  options:
+    - "runlevel"
+    - "init 3"
+    - "systemctl get-default"
+    - "chkconfig --list"
+  answer: 3
+
+- question: "Was ist das Ergebnis des Befehls tar -czf archive.tar.gz /home/user?"
+  options:
+    - "Extrahiert ein tar-Archiv"
+    - "Komprimiert ein Verzeichnis in gzip und erstellt ein tar-Archiv"
+    - "Erstellt ein unkomprimiertes Archiv"
+    - "Zeigt den Inhalt eines Archivs an"
+  answer: 2
+
+- question: "Was ist die Rolle von /etc/shadow?"
+  options:
+    - "Enthält Gruppeninformationen"
+    - "Speichert Shell-Einstellungen"
+    - "Enthält verschlüsselte Passwörter und Passwort-Policy"
+    - "Legt die Benutzerrechte auf Dateien fest"
+  answer: 3
+
+- question: "Welcher dieser Befehle ändert dauerhaft den Hostnamen eines Systems mit systemd?"
+  options:
+    - "hostnamectl set-hostname <neuer-name>"
+    - "echo <neuer-name> > /etc/hostname"
+    - "sysctl kernel.hostname=<neuer-name>"
+    - "sethostname <neuer-name>"
+  answer: 1
+
+- question: "Wie kann man eine Textdatei rekursiv in einem Verzeichnisbaum nach einem Begriff durchsuchen?"
+  options:
+    - "find /dir -name \"*.txt\" -exec grep \"text\" {}"
+    - "grep \"text\" /dir"
+    - "grep -r \"text\" /dir"
+    - "search /dir \"text\""
+  answer: 3
+
+- question: "Welche Aussage trifft auf den Befehl umask 027 zu?"
+  options:
+    - "Neue Dateien erhalten standardmäßig Rechte 750"
+    - "Neue Dateien erhalten standardmäßig Rechte 640"
+    - "Neue Dateien erhalten standardmäßig Rechte 666"
+    - "Neue Dateien erhalten standardmäßig Rechte 777"
+  answer: 1
+

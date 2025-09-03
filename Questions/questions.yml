@@ -1,0 +1,24 @@
+description: "Drei Testfagen"
+questions:
+  - question: "Was ist die Hauptstadt von Frankreich?"
+    options:
+      - "Berlin"
+      - "Paris"
+      - "London"
+      - "Rom"
+    answer: 2
+  - question: "Welches ist das größte Säugetier?"
+    options:
+      - "Elefant"
+      - "Giraffe"
+      - "Wal"
+      - "Nashorn"
+    answer: 3
+  - question: "Wer hat die Relativitätstheorie entdeckt?"
+    options:
+      - "Isaac Newton"
+      - "Albert Einstein"
+      - "Galileo Galilei"
+      - "Stephen Hawking"
+    answer: 2
+
