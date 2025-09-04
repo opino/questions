@@ -1,1 +1,92 @@
 
+description: "Hundert Testfragen"
+questions:
+  - question: "Welche Datei enthält die Benutzerinformationen wie Passwort, Benutzer-ID und Heimatverzeichnis?"
+    options:
+      - "/etc/group"
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "/etc/sudoers"
+    answer: 2
+    why: "Die Datei /etc/passwd enthält Benutzerinformationen wie Benutzername und UID."
+
+  - question: "Welche Datei speichert verschlüsselte Benutzerpasswörter, für gewöhnlich nur lesbar durch root?"
+    options:
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "/etc/group"
+      - "/etc/gshadow"
+    answer: 2
+    why: "In /etc/shadow werden die Passwort-Hashes sicher abgelegt."
+
+  - question: "Welcher Befehl zeigt Prozesse in einer Baumstruktur an?"
+    options:
+      - "ps aux"
+      - "top"
+      - "pstree"
+      - "htop"
+    answer: 3
+    why: "pstree zeigt Prozesse hierarchisch als Baum."
+
+  - question: "Welcher Befehl zeigt offen TCP‑Sockets an?"
+    options:
+      - "netstat -tunlp"
+      - "ifconfig"
+      - "route"
+      - "iptables -L"
+    answer: 1
+    why: "netstat -tunlp zeigt TCP-/UDP-Sockets mit zugehörigen Programmen."
+
+  - question: "Welches Dateisystem ist journal‑fähig?"
+    options:
+      - "ext2"
+      - "ext3"
+      - "FAT32"
+      - "ISO9660"
+    answer: 2
+    why: "ext3 ist ext2 mit Journaling-Funktion."
+
+  - question: "Welcher Befehl formatiert eine Partition mit ext4?"
+    options:
+      - "mkfs.ext4 /dev/sda1"
+      - "fdisk /dev/sda1"
+      - "mount /dev/sda1"
+      - "fsck.ext4 /dev/sda1"
+    answer: 1
+    why: "mkfs.ext4 formatiert mit ext4."
+
+  - question: "Wo werden Standard‑Umgebungsvariablen systemweit definiert?"
+    options:
+      - "/etc/profile"
+      - "~/.bashrc"
+      - "/etc/bash.bashrc"
+      - "/etc/environment"
+    answer: 4
+    why: "/etc/environment definiert systemweit Umgebungsvariablen."
+
+  - question: "Welcher Shell‑Startskript wird nur beim interaktiven Login‑Shell ausgeführt?"
+    options:
+      - "~/.bashrc"
+      - "/etc/bash.bashrc"
+      - "/etc/profile"
+      - "/etc/environment"
+    answer: 3
+    why: "/etc/profile wird bei Login‑Shells ausgeführt."
+
+  - question: "Welcher Befehl ändert Eigentümer und Gruppe einer Datei?"
+    options:
+      - "chmod"
+      - "chown"
+      - "chgrp"
+      - "usermod"
+    answer: 2
+    why: "chown ändert Eigentümer und ggf. Gruppe."
+
+  - question: "Welcher Befehl ändert nur die Gruppe einer Datei?"
+    options:
+      - "chmod"
+      - "chown"
+      - "chgrp"
+      - "usermod"
+    answer: 3
+    why: "chgrp ändert nur die Gruppenzugehörigkeit."
