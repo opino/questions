@@ -1,4 +1,3 @@
-
 description: "Hundert Testfragen"
 questions:
   - question: "Welche Datei enthält die Benutzerinformationen wie Passwort, Benutzer-ID und Heimatverzeichnis?"
@@ -90,3 +89,723 @@ questions:
       - "usermod"
     answer: 3
     why: "chgrp ändert nur die Gruppenzugehörigkeit."
+    
+  - question: "Welcher Befehl zeigt Dateisystemnutzung pro Verzeichnis an (rekursiv)?"
+    options:
+      - "df -h"
+      - "du -sh"
+      - "du -h --max-depth=1"
+      - "ls -l"
+    answer: 3
+    why: "du -h --max-depth=1 zeigt die Nutzung für Unterverzeichnisse an."
+
+  - question: "Welches Tool repariert beschädigte ext‑Dateisysteme?"
+    options:
+      - "fsck"
+      - "mkfs"
+      - "e2fsck"
+      - "badblocks"
+    answer: 3
+    why: "e2fsck ist FS-Checker für ext‑Dateisysteme."
+
+  - question: "Welcher Befehl zielt auf einmalige Ausführung eines Kommandos im Hintergrund?"
+    options:
+      - "nohup"
+      - "screen"
+      - "bg"
+      - "cron"
+    answer: 1
+    why: "nohup führt Befehl immun gegen HUP aus."
+
+  - question: "Welches Tool zeigt Netzwerkverkehr in Echtzeit?"
+    options:
+      - "tcpdump"
+      - "iftop"
+      - "ping"
+      - "traceroute"
+    answer: 2
+    why: "iftop visualisiert Netzwerkverkehr in Echtzeit."
+
+  - question: "Was bewirkt 'chmod 755 datei'?"
+    options:
+      - "Vollzugriff für alle"
+      - "Lesen/Schreiben/Ausführen für alle"
+      - "Vollzugriff für Besitzer, Lesen/Ausführen für Gruppe/Andere"
+      - "Nur Lesen für alle"
+    answer: 3
+    why: "7 = rwx, 5 = r-x."
+
+  - question: "Welche Option beim mount‑Befehl macht das Dateisystem nur lesbar?"
+    options:
+      - "rw"
+      - "ro"
+      - "noexec"
+      - "sync"
+    answer: 2
+    why: "ro bedeutet Read-Only."
+
+  - question: "Welcher Befehl zeigt die aktuelle Routing‑Tabelle?"
+    options:
+      - "ifconfig"
+      - "ip route"
+      - "netstat"
+      - "route"
+    answer: 2
+    why: "ip route zeigt die Routing-Tabelle modernerweise."
+
+  - question: "Welcher Befehl ändert Benutzerpasswörter?"
+    options:
+      - "passwd"
+      - "chsh"
+      - "usermod"
+      - "useradd"
+    answer: 1
+    why: "passwd ändert das eigene Passwort."
+
+  - question: "Wie fügt man einen neuen Benutzer hinzu?"
+    options:
+      - "adduser user"
+      - "useradd user"
+      - "newuser user"
+      - "createuser user"
+    answer: 2
+    why: "useradd ist Standard-Tool zur Benutzeranlage."
+
+  - question: "Wie erstellt man ein Archiv mit tar und gzip?"
+    options:
+      - "tar -cvf archive.tar.gz"
+      - "tar -czvf archive.tar.gz"
+      - "gzip archive.tar"
+      - "zip archive.tar.gz"
+    answer: 2
+    why: "-z benutzt gzip beim Archivieren."
+
+  - question: "Welcher Befehl zeigt Umgebungsvariablen an?"
+    options:
+      - "env"
+      - "set"
+      - "printenv"
+      - "Alle oben"
+    answer: 4
+    why: "env, set und printenv zeigen Umgebungsvariablen."
+
+  - question: "Welcher Timer‑Befehl führt Befehl nach 10 Sekunden aus?"
+    options:
+      - "sleep 10"
+      - "wait 10"
+      - "pause 10"
+      - "delay 10"
+    answer: 1
+    why: "sleep pausiert Ausführung um 10 Sekunden."
+
+  - question: "Welches Tool liefert Systemlog‑Statistiken, falls installiert?"
+    options:
+      - "syslog"
+      - "journalctl"
+      - "dmesg"
+      - "logger"
+    answer: 2
+    why: "journalctl greift auf systemd-Journald-Logs zu."
+
+  - question: "Welcher Befehl zeigt Kernel‑Ring‑Buffer?"
+    options:
+      - "dmesg"
+      - "journalctl"
+      - "syslog"
+      - "logread"
+    answer: 1
+    why: "dmesg zeigt Kernel‑Logs sofort."
+
+  - question: "Welcher Dienst steuert Netzwerk‑Konfiguration bei systemd?"
+    options:
+      - "network"
+      - "networking"
+      - "NetworkManager"
+      - "systemd‑networkd"
+    answer: 4
+    why: "systemd-networkd ist systemd‑nativ."
+
+  - question: "Wie aktiviert man einen Dienst dauerhaft?"
+    options:
+      - "systemctl start name"
+      - "systemctl enable name"
+      - "service name start"
+      - "init name enable"
+    answer: 2
+    why: "enable stellt sicher, dass Dienst beim Boot startet."
+
+  - question: "Welche Datei definiert den Boot‑Loader‑Eintrag für GRUB?"
+    options:
+      - "/boot/grub/grub.cfg"
+      - "/etc/grub.conf"
+      - "/etc/default/grub"
+      - "/boot/grub/menu.lst"
+    answer: 1
+    why: "grub.cfg ist die generierte Konfigurationsdatei."
+
+  - question: "Welcher Befehl aktualisiert GRUB‑Konfiguration nach Änderungen?"
+    options:
+      - "update-grub"
+      - "grub-install"
+      - "grub-mkconfig"
+      - "None"
+    answer: 1
+    why: "update-grub generiert eine neue grub.cfg."
+
+  - question: "Welcher Befehl zeigt aktuelle CPU‑Auslastung (interaktiv)?"
+    options:
+      - "ps"
+      - "top"
+      - "vmstat"
+      - "iostat"
+    answer: 2
+    why: "top zeigt laufende Prozesse mit CPU‑Auslastung."
+
+  - question: "Welcher Befehl zeigt Speicher‑Statistiken?"
+    options:
+      - "iostat"
+      - "vmstat"
+      - "free"
+      - "df"
+    answer: 3
+    why: "free zeigt genutzten und freien Arbeitsspeicher."
+
+  - question: "Welches Tool zeigt IO‑Statistiken pro Gerät?"
+    options:
+      - "iostat"
+      - "vmstat"
+      - "free"
+      - "df"
+    answer: 1
+    why: "iostat zeigt I/O–Statistiken."
+
+  - question: "Welcher Befehl listet open Dateien eines Prozesses?"
+    options:
+      - "lsof"
+      - "ls"
+      - "open"
+      - "fuser"
+    answer: 1
+    why: "lsof listet offene Dateien und Sockets."
+
+  - question: "Welches Tool zeigt, welcher Prozess eine Port-Verbindung hält?"
+    options:
+      - "lsof -i :22"
+      - "netstat"
+      - "ss"
+      - "pidof"
+    answer: 1
+    why: "lsof -i :Port zeigt Prozess‑ID."
+
+  - question: "Welcher Befehl zeigt Netzwerkverbindungen moderner anstelle netstat?"
+    options:
+      - "ss"
+      - "ifconfig"
+      - "route"
+      - "ip netstat"
+    answer: 1
+    why: "ss ist Ersatz für netstat."
+
+  - question: "Welcher Befehl installiert Pakete auf Debian-Systemen?"
+    options:
+      - "yum install"
+      - "apt-get install"
+      - "zypper install"
+      - "rpm install"
+    answer: 2
+    why: "apt‑get ist Standard‑Paketmanager auf Debian‑basierten Systemen."
+
+  - question: "Welches Kommando aktualisiert Paketlisten?"
+    options:
+      - "apt-get update"
+      - "apt-get upgrade"
+      - "apt-get install"
+      - "apt-get remove"
+    answer: 1
+    why: "update lädt neue Paketlisten."
+
+  - question: "Welches Kommando aktualisiert installierte Pakete?"
+    options:
+      - "apt-get update"
+      - "apt-get upgrade"
+      - "apt-get refresh"
+      - "apt-get fetch"
+    answer: 2
+    why: "upgrade installiert neuere Versionen vorhandener Pakete."
+
+  - question: "Welcher Befehl zeigt alle aktiven Dienste (systemd)?"
+    options:
+      - "systemctl status"
+      - "systemctl list-units --type=service"
+      - "service --status-all"
+      - "initctl list"
+    answer: 2
+    why: "list-units zeigt Einheiten eines bestimmten Typs."
+
+  - question: "Welche Datei enthält Benutzer‑Gruppeneinträge?"
+    options:
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "/etc/group"
+      - "/etc/gshadow"
+    answer: 3
+    why: "/etc/group enthält Gruppendefinitionen."
+
+  - question: "Wie legt man eine neue Gruppe an?"
+    options:
+      - "groupadd name"
+      - "addgroup name"
+      - "newgroup name"
+      - "group new name"
+    answer: 1
+    why: "groupadd ist Standard‑Kommando."
+
+  - question: "Welcher Befehl zeigt Anmeldeversuche (Auth‑Logs)?"
+    options:
+      - "journalctl -u ssh.service"
+      - "grep auth /var/log/auth.log"
+      - "dmesg"
+      - "last"
+    answer: 2
+    why: "auth.log enthält Authentifizierungs‑Events."
+
+  - question: "Wie zeigt man An- und Abmeldevorgänge eines Nutzers?"
+    options:
+      - "last"
+      - "who"
+      - "w"
+      - "lastlog"
+    answer: 1
+    why: "last zeigt vergangene Sessions."
+
+  - question: "Welches Tool zeigt eingeloggte Nutzer und deren Aktivität?"
+    options:
+      - "who"
+      - "w"
+      - "users"
+      - "finger"
+    answer: 2
+    why: "w zeigt Nutzer + Prozesse."
+
+  - question: "Womit ändert man Shell eines Benutzers?"
+    options:
+      - "chsh"
+      - "usermod"
+      - "passwd"
+      - "useradd"
+    answer: 1
+    why: "chsh ändert die Login‑Shell."
+
+  - question: "Welcher Befehl zeigt CPU‑Last pro Core?"
+    options:
+      - "mpstat"
+      - "top"
+      - "ps"
+      - "htop"
+    answer: 1
+    why: "mpstat zeigt per‑CPU‑Statistiken."
+
+  - question: "Welches Tool zeigt Block‑Geräte?"
+    options:
+      - "fdisk -l"
+      - "lsblk"
+      - "blkid"
+      - "parted"
+    answer: 2
+    why: "lsblk listet Geräte in Baumstruktur."
+
+  - question: "Welches Tool zeigt UUID eines Dateisystems?"
+    options:
+      - "blkid"
+      - "lsblk"
+      - "fdisk"
+      - "mount"
+    answer: 1
+    why: "blkid zeigt UUID und Typ."
+
+  - question: "Wie springt man in der Shell in den Hintergrund?"
+    options:
+      - "strg+Z"
+      - "ctrl+C"
+      - "fg"
+      - "bg"
+    answer: 1
+    why: "Strg+Z stoppt Job und legt ihn in Hintergrund."
+
+  - question: "Welcher Befehl setzt einen gestoppten Job im Hintergrund fort?"
+    options:
+      - "bg"
+      - "fg"
+      - "jobs"
+      - "kill"
+    answer: 1
+    why: "bg leitet einen gestoppten Job fort im Hintergrund."
+
+  - question: "Welches Kommando listet Hintergrund‑Jobs auf?"
+    options:
+      - "jobs"
+      - "ps"
+      - "bg"
+      - "fg"
+    answer: 1
+    why: "jobs zeigt laufende Jobs dieser Shell."
+
+  - question: "Wie beendet man alle Instanzen eines Prozesses per Name?"
+    options:
+      - "killall name"
+      - "kill name"
+      - "pkill name"
+      - "xkill"
+    answer: 1
+    why: "killall tötet Prozesse nach Namen."
+
+  - question: "Welcher Befehl tötet Prozesse nach Name mit Pattern?"
+    options:
+      - "killall"
+      - "pkill"
+      - "kill"
+      - "killp"
+    answer: 2
+    why: "pkill erlaubt reguläre Ausdrücke."
+
+  - question: "Welcher Befehl zeigt Verzeichnisinhalt sortiert nach Datum?"
+    options:
+      - "ls -lt"
+      - "ls -lh"
+      - "ls -la"
+      - "ls -lr"
+    answer: 1
+    why: "-t sortiert nach Änderungszeit."
+
+  - question: "Wie findet man Dateien nach Name?"
+    options:
+      - "grep"
+      - "locate"
+      - "find"
+      - "whereis"
+    answer: 3
+    why: "find kann Verzeichnis rekursiv durchsuchen."
+
+  - question: "Welcher Befehl durchsucht Dateien nach Suchmuster?"
+    options:
+      - "find"
+      - "grep"
+      - "locate"
+      - "which"
+    answer: 2
+    why: "grep durchsucht Inhalte nach Muster."
+
+  - question: "Wie aktualisiert man die locate‑Datenbank?"
+    options:
+      - "updatedb"
+      - "locate --update"
+      - "find --updatedb"
+      - "updatedb locate"
+    answer: 1
+    why: "updatedb baut Datenbank neu auf."
+
+  - question: "Welcher Befehl zeigt Pfad zum Programm?"
+    options:
+      - "which prog"
+      - "whereis prog"
+      - "type prog"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen unterschiedliche Pfadangaben."
+
+  - question: "Welcher Befehl zeigt ausführbare Datei eines Befehls?"
+    options:
+      - "which"
+      - "type"
+      - "locate"
+      - "whereis"
+    answer: 2
+    why: "type zeigt Art und Ort."
+
+  - question: "Wie zeigt man Datum in der Shell?"
+    options:
+      - "time"
+      - "date"
+      - "now"
+      - "calendar"
+    answer: 2
+    why: "date zeigt aktuelles Datum/Uhrzeit."
+
+  - question: "Welcher Befehl belegt/verfügbaren Speicher (SWAP)?"
+    options:
+      - "swapon --show"
+      - "free"
+      - "vmstat"
+      - "top"
+    answer: 1
+    why: "swapon --show listet aktiven Swap."
+
+  - question: "Wie aktiviert man Swap‑Datei?"
+    options:
+      - "swapon /swapfile"
+      - "activate swapfile"
+      - "mkswapfile"
+      - "enable swapfile"
+    answer: 1
+    why: "swapon aktiviert eine Swap‑Datei/Partition."
+
+  - question: "Welcher Befehl erstellt eine Swap‑Datei?"
+    options:
+      - "mkswap"
+      - "mkfs.swap"
+      - "dd if=/dev/zero of=/swapfile"
+      - "swapon --create"
+    answer: 1
+    why: "mkswap formatiert Swap."
+
+  - question: "Welches Kommando wandelt Swap‑Partition um?"
+    options:
+      - "mkswap"
+      - "mkfs.ext4"
+      - "swapoff"
+      - "swapon"
+    answer: 1
+    why: "mkswap bereitet Swap‑Partition vor."
+
+  - question: "Welches Kommando deaktiviert Swap?"
+    options:
+      - "swapoff"
+      - "swapon"
+      - "mkswap"
+      - "kill swap"
+    answer: 1
+    why: "swapoff deaktiviert Swap‑Medium."
+
+  - question: "Welcher Befehl ändert Dateirechte rekursiv?"
+    options:
+      - "chmod -R"
+      - "chown -r"
+      - "chmod -r"
+      - "chown -R"
+    answer: 1
+    why: "-R steht für rekursiv."
+
+  - question: "Welcher Befehl ändert Eigentümer rekursiv?"
+    options:
+      - "chown -R"
+      - "chown -r"
+      - "chmod -R"
+      - "chgrp -R"
+    answer: 1
+    why: "-R geht rekursiv durch Unterverzeichnisse."
+
+  - question: "Wie zeigt man freie Inode‑Zahl eines Dateisystems?"
+    options:
+      - "df -i"
+      - "df -h"
+      - "du -i"
+      - "ls -i"
+    answer: 1
+    why: "df -i zeigt Inodes, nicht Speicherplatz."
+
+  - question: "Welcher Befehl mountet ISO‑Datei ohne Brennen?"
+    options:
+      - "mount -o loop iso.iso /mnt"
+      - "burn iso.iso /mnt"
+      - "udisksctl loop-setup"
+      - "looop mount iso.iso"
+    answer: 1
+    why: "-o loop erlaubt ISO‑Mount ohne physische Medien."
+
+  - question: "Wie zeigt man Mount‑Punkte?"
+    options:
+      - "mount"
+      - "df"
+      - "lsblk"
+      - "blkid"
+    answer: 1
+    why: "mount zeigt list of mounted file systems."
+
+  - question: "Welcher Befehl zeigt Dateisystemtyp der gemounteten Laufwerke?"
+    options:
+      - "mount"
+      - "df -T"
+      - "lsblk"
+      - "blkid"
+    answer: 2
+    why: "df -T zeigt Typ und Nutzung."
+
+  - question: "Welches Tool zeigt kernelthreads?"
+    options:
+      - "ps -ef"
+      - "htop"
+      - "pstree"
+      - "ps axu"
+    answer: 1
+    why: "ps -ef zeigt alle Prozesse inkl. Threads."
+
+  - question: "Welches Kommando zeigt nur root‑Prozesse?"
+    options:
+      - "ps -U root"
+      - "grep root"
+      - "ps aux | grep root"
+      - "ps -u root"
+    answer: 1
+    why: "ps -U root filtert nach Benutzer‑ID root."
+
+  - question: "Welcher Befehl zeigt nur Prozesse eines Nutzers?"
+    options:
+      - "ps -u user"
+      - "ps U user"
+      - "ps -U user"
+      - "Alle oben"
+    answer: 4
+    why: "Alle Varianten erlauben Filter nach User."
+
+  - question: "Welches Kommando zeigt process‑tree und CPU‑Nutzung kombiniert?"
+    options:
+      - "pstree"
+      - "htop"
+      - "ps"
+      - "top"
+    answer: 2
+    why: "htop zeigt ausführlich CPU, Prozesse und Tree."
+
+  - question: "Welche Datei legt lokale Netzwerkkonfiguration (Hostname) fest?"
+    options:
+      - "/etc/hosts"
+      - "/etc/hostname"
+      - "/etc/networks"
+      - "/etc/resolv.conf"
+    answer: 2
+    why: "/etc/hostname enthält Hostnamen."
+
+  - question: "Wo werden Hostnamen zu IPs aufgelöst?"
+    options:
+      - "/etc/hosts"
+      - "/etc/hostname"
+      - "/etc/resolv.conf"
+      - "/etc/networks"
+    answer: 1
+    why: "/etc/hosts mappt Namen direkt zu IPs."
+
+  - question: "Welche Datei enthält DNS‑Server‑Adressen?"
+    options:
+      - "/etc/hosts"
+      - "/etc/resolv.conf"
+      - "/etc/nsswitch.conf"
+      - "/etc/networks"
+    answer: 2
+    why: "/etc/resolv.conf enthält DNS‑Server."
+
+  - question: "Welche Datei steuert Namensauflösungsreihenfolge?"
+    options:
+      - "/etc/nsswitch.conf"
+      - "/etc/hosts"
+      - "/etc/resolv.conf"
+      - "/etc/hostname"
+    answer: 1
+    why: "nsswitch.conf legt Reihenfolge wie hosts, DNS."
+
+  - question: "Welches Tool zeigt alle aktiven Prozesse sortiert?"
+    options:
+      - "ps aux --sort=-%cpu"
+      - "top -o %CPU"
+      - "htop"
+      - "Alle oben"
+    answer: 4
+    why: "Alle erlauben Sortierung nach CPU‑Nutzung."
+
+  - question: "Wie weckt man den Rechner von suspend?"
+    options:
+      - "power button"
+      - "Networkboot"
+      - "RTC‑Alarm"
+      - "USB‑Gerät"
+    answer: 1
+    why: "Power‑Button ist Standard‑Wake‑Mechanismus."
+
+  - question: "Welcher Mechanismus erlaubt Zeitplan‑Wake‑up (RTC)?"
+    options:
+      - "cron"
+      - "at"
+      - "rtcwake"
+      - "systemd‑timer"
+    answer: 3
+    why: "rtcwake plant Aufwecken zur bestimmten Zeit."
+
+  - question: "Welcher Befehl zeigt aktive Netzwerkinterfaces?"
+    options:
+      - "ifconfig"
+      - "ip link show"
+      - "ifconfig -a"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen Interfaces, ip ist modern."
+
+  - question: "Welches Kommando aktiviert Interface eth0?"
+    options:
+      - "ifconfig eth0 up"
+      - "ifup eth0"
+      - "ip link set eth0 up"
+      - "Alle oben"
+    answer: 4
+    why: "Alle Varianten aktivieren Interface."
+
+  - question: "Welcher Befehl zeigt Routing‑Tabelle modern?"
+    options:
+      - "ip route show"
+      - "route -n"
+      - "netstat -r"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen Routing‑Tabelle, ip ist präferiert."
+
+  - question: "Welcher Befehl zeigt offene UDP‑Sektionen?"
+    options:
+      - "netstat -un"
+      - "lsof -i udp"
+      - "ss -u"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen UDP‑Verbindungen."
+
+  - question: "Wie prüft man DNS‑Auflösung eines Namens?"
+    options:
+      - "nslookup domain"
+      - "dig domain"
+      - "host domain"
+      - "Alle oben"
+    answer: 4
+    why: "Alle Tools lösen DNS‑Anfragen auf."
+
+  - question: "Welcher Befehl zeigt IPTables‑Regeln (IPv4)?"
+    options:
+      - "iptables -L"
+      - "nft list ruleset"
+      - "ufw status"
+      - "firewall-cmd --list-all"
+    answer: 1
+    why: "iptables -L zeigt bestehende Regeln IPv4."
+
+  - question: "Welcher Befehl zeigt Regeln von nftables?"
+    options:
+      - "nft list ruleset"
+      - "iptables -L"
+      - "ufw status"
+      - "firewall-cmd"
+    answer: 1
+    why: "nft list ruleset zeigt nftables‑Regeln."
+
+  - question: "Welcher Firewall‑Dienst ist bei RHEL/CentOS Standard?"
+    options:
+      - "iptables"
+      - "nftables"
+      - "firewalld"
+      - "ufw"
+    answer: 3
+    why: "firewalld ist Standard‑Frontend in RHEL‑Systemen."
+
+  - question: "Welcher Befehl zeigt aktive DAemons beim SysV‑Init?"
+    options:
+      - "service --status-all"
+      - "systemctl list-units"
+      - "chkconfig --list"
+      - "init.d --status"
+    answer: 1
+    why: "service --status-all zeigt Dienste in SysV‑Init."
