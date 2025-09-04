@@ -15,4 +15,5 @@ cargo run
 
 ## Wischlischt:
 
-
+Die Fragen sollen bei falscher beantwortung in einen Stapel falsch.
+-> jede Frage solle einen Hash erhalten, mit dem die Frage eindeutig indentifiziert werden kann.
