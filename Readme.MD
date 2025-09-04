@@ -1,4 +1,4 @@
-## Programm starten
+## how to schtart:
 
 cargo run
 
