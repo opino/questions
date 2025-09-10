@@ -23,7 +23,7 @@ Die Fragen sollen bei falscher beantwortung in einen Stapel falsch.
 
 Einfacher Gewichtungsansatz
 - Jede Frage hat ein Gewicht (z. B. ein Zahlenwert zwischen 1 und 10).
--- Startgewicht = 5
+  - Startgewicht = 5
 --- Richtige Antwort: Gewicht −1 (bis Minimum 1)
 --- Falsche Antwort: Gewicht +2 (bis Maximum 10)
 
