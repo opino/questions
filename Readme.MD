@@ -21,9 +21,33 @@ Die Fragen sollen bei falscher beantwortung in einen Stapel falsch.
 
 ## Featurerequest 002 Gewichtung:
 
-Einfacher Gewichtungsansatz
+1. Einfacher Gewichtungsansatz
 - Jede Frage hat ein Gewicht (z. B. ein Zahlenwert zwischen 1 und 10).
   - Startgewicht = 5
     - Richtige Antwort: Gewicht −1 (bis Minimum 1)
     - Falsche Antwort: Gewicht +2 (bis Maximum 10)
+
+2. Spaced Repetition Light (etwas klüger)
+- Jede Frage bekommt:
+  - einen Zähler für richtige Antworten
+  - einen Zähler für falsche Antworten
+  - ein "Nächstes Abfragedatum" (timestamp)
+
+Falsche Antworten → nächstes Abfragedatum wird vorverlegt
+Richtige Antworten → nächstes Abfragedatum wird nach hinten verschoben
+
+So erscheinen schwierige Fragen öfter und früher.
+
+3. Leitner-System (bekanntes Karteikartenprinzip)
+- Fragen wandern durch "Boxen" (Levels).
+  - Box 1: neue oder falsch beantwortete Fragen → täglich
+  - Box 2: richtig beantwortet → alle 3 Tage
+  - Box 3: richtig beantwortet → alle 7 Tage
+
+Nach einer falschen Antwort → zurück in Box 1.
+
+4. Gewichtung + Zufall kombiniert
+- Wahrscheinlichkeit einer Frage = gewicht / summe aller gewichte
+  - So wird nicht strikt nach Score ausgewählt, sondern nach Wahrscheinlichkeiten 
+  – was Wiederholung garantiert, aber auch Abwechslung ermöglicht.
 
