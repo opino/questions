@@ -21,6 +21,8 @@ Die Fragen sollen bei falscher beantwortung in einen Stapel falsch.
 
 ## Featurerequest 002 Gewichtung:
 
+Das ist noch nicht umgesetzt, falsch benantwortet fagen landen aber in der datei wrong_answers.txt
+
 ### Einfacher Gewichtungsansatz
 - Jede Frage hat ein Gewicht (z. B. ein Zahlenwert zwischen 1 und 10).
   - Startgewicht = 5
