@@ -1,0 +1,3 @@
+a451c546e10cd789389f6a4cc7affb3d,2,"Welcher Befehl zeigt Pfad zum Programm?"
+59660e209ec40fa951bf40cef9e41e83,2,"Wie prüft man DNS‑Auflösung eines Namens?"
+a7f7fc32bc12e569f80e982a8e1707bd,1,"Wie findet man Dateien nach Name?"

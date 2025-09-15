@@ -1,0 +1,901 @@
+description: "Hundert Testfragen"
+questions:
+  - question: "Welche Datei enthält die Benutzerinformationen wie Passwort, Benutzer-ID und Heimatverzeichnis?"
+    hash: "8a31bc169a9d0e995ccd61ef1acb3971"
+    options:
+      - "/etc/group"
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "/etc/sudoers"
+    answer: 2
+    why: "Die Datei /etc/passwd enthält Benutzerinformationen wie Benutzername und UID."
+
+  - question: "Welche Datei speichert verschlüsselte Benutzerpasswörter, für gewöhnlich nur lesbar durch root?"
+    hash: "5a05f55687842426e628c9ca661d7a99"
+    options:
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "/etc/group"
+      - "/etc/gshadow"
+    answer: 2
+    why: "In /etc/shadow werden die Passwort-Hashes sicher abgelegt."
+
+  - question: "Welcher Befehl zeigt Prozesse in einer Baumstruktur an?"
+    hash: "af5b02f6b52fb125205286b70f331198"
+    options:
+      - "ps aux"
+      - "top"
+      - "pstree"
+      - "htop"
+    answer: 3
+    why: "pstree zeigt Prozesse hierarchisch als Baum."
+
+  - question: "Welcher Befehl zeigt offen TCP‑Sockets an?"
+    hash: "8ffe809a816accc904d07393d459c741"
+    options:
+      - "netstat -tunlp"
+      - "ifconfig"
+      - "route"
+      - "iptables -L"
+    answer: 1
+    why: "netstat -tunlp zeigt TCP-/UDP-Sockets mit zugehörigen Programmen."
+
+  - question: "Welches Dateisystem ist journal‑fähig?"
+    hash: "1df1b12290eac753c8f05134b9827863"
+    options:
+      - "ext2"
+      - "ext3"
+      - "FAT32"
+      - "ISO9660"
+    answer: 2
+    why: "ext3 ist ext2 mit Journaling-Funktion."
+
+  - question: "Welcher Befehl formatiert eine Partition mit ext4?"
+    hash: "70ed958076db78285cc459db05f12e4c"
+    options:
+      - "mkfs.ext4 /dev/sda1"
+      - "fdisk /dev/sda1"
+      - "mount /dev/sda1"
+      - "fsck.ext4 /dev/sda1"
+    answer: 1
+    why: "mkfs.ext4 formatiert mit ext4."
+
+  - question: "Wo werden Standard‑Umgebungsvariablen systemweit definiert?"
+    hash: "2fd17ecaa8aab8963064edc4a467a28c"
+    options:
+      - "/etc/profile"
+      - "~/.bashrc"
+      - "/etc/bash.bashrc"
+      - "/etc/environment"
+    answer: 4
+    why: "/etc/environment definiert systemweit Umgebungsvariablen."
+
+  - question: "Welcher Shell‑Startskript wird nur beim interaktiven Login‑Shell ausgeführt?"
+    hash: "94125fc1b37750c50652d2a5817aa255"
+    options:
+      - "~/.bashrc"
+      - "/etc/bash.bashrc"
+      - "/etc/profile"
+      - "/etc/environment"
+    answer: 3
+    why: "/etc/profile wird bei Login‑Shells ausgeführt."
+
+  - question: "Welcher Befehl ändert Eigentümer und Gruppe einer Datei?"
+    hash: "bd7f9a7cc163286d894f54efe420abeb"
+    options:
+      - "chmod"
+      - "chown"
+      - "chgrp"
+      - "usermod"
+    answer: 2
+    why: "chown ändert Eigentümer und ggf. Gruppe."
+
+  - question: "Welcher Befehl ändert nur die Gruppe einer Datei?"
+    hash: "2bab281f8f08d7773dc4e0efc36d4318"
+    options:
+      - "chmod"
+      - "chown"
+      - "chgrp"
+      - "usermod"
+    answer: 3
+    why: "chgrp ändert nur die Gruppenzugehörigkeit."
+    
+  - question: "Welcher Befehl zeigt Dateisystemnutzung pro Verzeichnis an (rekursiv)?"
+    hash: "3e9f4c7c5235b318dca91c1a5f1f85a7"
+    options:
+      - "df -h"
+      - "du -sh"
+      - "du -h --max-depth=1"
+      - "ls -l"
+    answer: 3
+    why: "du -h --max-depth=1 zeigt die Nutzung für Unterverzeichnisse an."
+
+  - question: "Welches Tool repariert beschädigte ext‑Dateisysteme?"
+    hash: "1867ac27fed00942460677478c4aa0ee"
+    options:
+      - "fsck"
+      - "mkfs"
+      - "e2fsck"
+      - "badblocks"
+    answer: 3
+    why: "e2fsck ist FS-Checker für ext‑Dateisysteme."
+
+  - question: "Welcher Befehl zielt auf einmalige Ausführung eines Kommandos im Hintergrund?"
+    hash: "f48acaa9bdb74cd602ed0692ec7a3120"
+    options:
+      - "nohup"
+      - "screen"
+      - "bg"
+      - "cron"
+    answer: 1
+    why: "nohup führt Befehl immun gegen HUP aus."
+
+  - question: "Welches Tool zeigt Netzwerkverkehr in Echtzeit?"
+    hash: "d15ec9655871116c31d631dfddf446d1"
+    options:
+      - "tcpdump"
+      - "iftop"
+      - "ping"
+      - "traceroute"
+    answer: 2
+    why: "iftop visualisiert Netzwerkverkehr in Echtzeit."
+
+  - question: "Was bewirkt 'chmod 755 datei'?"
+    hash: "1d18de1d89a7d56aaef9423e76d9098a"
+    options:
+      - "Vollzugriff für alle"
+      - "Lesen/Schreiben/Ausführen für alle"
+      - "Vollzugriff für Besitzer, Lesen/Ausführen für Gruppe/Andere"
+      - "Nur Lesen für alle"
+    answer: 3
+    why: "7 = rwx, 5 = r-x."
+
+  - question: "Welche Option beim mount‑Befehl macht das Dateisystem nur lesbar?"
+    hash: "ff5cc58ff1051bf8094f060be52ea00f"
+    options:
+      - "rw"
+      - "ro"
+      - "noexec"
+      - "sync"
+    answer: 2
+    why: "ro bedeutet Read-Only."
+
+  - question: "Welcher Befehl zeigt die aktuelle Routing‑Tabelle?"
+    hash: "d06338848c4b37ac8cd7a74bc0b58054"
+    options:
+      - "ifconfig"
+      - "ip route"
+      - "netstat"
+      - "route"
+    answer: 2
+    why: "ip route zeigt die Routing-Tabelle modernerweise."
+
+  - question: "Welcher Befehl ändert Benutzerpasswörter?"
+    hash: "499bf678077aed21720e554c3fb39e1d"
+    options:
+      - "passwd"
+      - "chsh"
+      - "usermod"
+      - "useradd"
+    answer: 1
+    why: "passwd ändert das eigene Passwort."
+
+  - question: "Wie fügt man einen neuen Benutzer hinzu?"
+    hash: "cbd023f2a086d36919f7e0fe6681af7c"
+    options:
+      - "adduser user"
+      - "useradd user"
+      - "newuser user"
+      - "createuser user"
+    answer: 2
+    why: "useradd ist Standard-Tool zur Benutzeranlage."
+
+  - question: "Wie erstellt man ein Archiv mit tar und gzip?"
+    hash: "21f6c68c80791ffeaea049fe02b8d6a8"
+    options:
+      - "tar -cvf archive.tar.gz"
+      - "tar -czvf archive.tar.gz"
+      - "gzip archive.tar"
+      - "zip archive.tar.gz"
+    answer: 2
+    why: "-z benutzt gzip beim Archivieren."
+
+  - question: "Welcher Befehl zeigt Umgebungsvariablen an?"
+    hash: "07911c57c32f144b59cb1af701c7db6a"
+    options:
+      - "env"
+      - "set"
+      - "printenv"
+      - "Alle oben"
+    answer: 4
+    why: "env, set und printenv zeigen Umgebungsvariablen."
+
+  - question: "Welcher Timer‑Befehl führt Befehl nach 10 Sekunden aus?"
+    hash: "d63d075a2bd70d7f410abfb9647ead5d"
+    options:
+      - "sleep 10"
+      - "wait 10"
+      - "pause 10"
+      - "delay 10"
+    answer: 1
+    why: "sleep pausiert Ausführung um 10 Sekunden."
+
+  - question: "Welches Tool liefert Systemlog‑Statistiken, falls installiert?"
+    hash: "ef462c6d53e52fe7a5d68dca2dbe59e7"
+    options:
+      - "syslog"
+      - "journalctl"
+      - "dmesg"
+      - "logger"
+    answer: 2
+    why: "journalctl greift auf systemd-Journald-Logs zu."
+
+  - question: "Welcher Befehl zeigt Kernel‑Ring‑Buffer?"
+    hash: "fa5254db862b2d675f8bf9d8a3cd3eed"
+    options:
+      - "dmesg"
+      - "journalctl"
+      - "syslog"
+      - "logread"
+    answer: 1
+    why: "dmesg zeigt Kernel‑Logs sofort."
+
+  - question: "Welcher Dienst steuert Netzwerk‑Konfiguration bei systemd?"
+    hash: "f12ca66676d62b226b407193bfbae8bf"
+    options:
+      - "network"
+      - "networking"
+      - "NetworkManager"
+      - "systemd‑networkd"
+    answer: 4
+    why: "systemd-networkd ist systemd‑nativ."
+
+  - question: "Wie aktiviert man einen Dienst dauerhaft?"
+    hash: "8818ffe9c28f00089705f0f82c9efb42"
+    options:
+      - "systemctl start name"
+      - "systemctl enable name"
+      - "service name start"
+      - "init name enable"
+    answer: 2
+    why: "enable stellt sicher, dass Dienst beim Boot startet."
+
+  - question: "Welche Datei definiert den Boot‑Loader‑Eintrag für GRUB?"
+    hash: "9b8318d41f0bb7983fd78a6c046ac1f0"
+    options:
+      - "/boot/grub/grub.cfg"
+      - "/etc/grub.conf"
+      - "/etc/default/grub"
+      - "/boot/grub/menu.lst"
+    answer: 1
+    why: "grub.cfg ist die generierte Konfigurationsdatei."
+
+  - question: "Welcher Befehl aktualisiert GRUB‑Konfiguration nach Änderungen?"
+    hash: "3a34b5e5ddbecb77834e444292fdfad3"
+    options:
+      - "update-grub"
+      - "grub-install"
+      - "grub-mkconfig"
+      - "None"
+    answer: 1
+    why: "update-grub generiert eine neue grub.cfg."
+
+  - question: "Welcher Befehl zeigt aktuelle CPU‑Auslastung (interaktiv)?"
+    hash: "c38cce4d18a03df6649c0a8e122d7bc8"
+    options:
+      - "ps"
+      - "top"
+      - "vmstat"
+      - "iostat"
+    answer: 2
+    why: "top zeigt laufende Prozesse mit CPU‑Auslastung."
+
+  - question: "Welcher Befehl zeigt Speicher‑Statistiken?"
+    hash: "93e393319254aa48f31fa686bd3b6dac"
+    options:
+      - "iostat"
+      - "vmstat"
+      - "free"
+      - "df"
+    answer: 3
+    why: "free zeigt genutzten und freien Arbeitsspeicher."
+
+  - question: "Welches Tool zeigt IO‑Statistiken pro Gerät?"
+    hash: "854d5a43db08192e6d733376d356c7ff"
+    options:
+      - "iostat"
+      - "vmstat"
+      - "free"
+      - "df"
+    answer: 1
+    why: "iostat zeigt I/O–Statistiken."
+
+  - question: "Welcher Befehl listet open Dateien eines Prozesses?"
+    hash: "119ac48ee5d69f7a211461ba5161bd22"
+    options:
+      - "lsof"
+      - "ls"
+      - "open"
+      - "fuser"
+    answer: 1
+    why: "lsof listet offene Dateien und Sockets."
+
+  - question: "Welches Tool zeigt, welcher Prozess eine Port-Verbindung hält?"
+    hash: "a0779183c95fc04aeac53889ea753c4c"
+    options:
+      - "lsof -i :22"
+      - "netstat"
+      - "ss"
+      - "pidof"
+    answer: 1
+    why: "lsof -i :Port zeigt Prozess‑ID."
+
+  - question: "Welcher Befehl zeigt Netzwerkverbindungen moderner anstelle netstat?"
+    hash: "e4a63f3825a57a05f20ee20fb768fce9"
+    options:
+      - "ss"
+      - "ifconfig"
+      - "route"
+      - "ip netstat"
+    answer: 1
+    why: "ss ist Ersatz für netstat."
+
+  - question: "Welcher Befehl installiert Pakete auf Debian-Systemen?"
+    hash: "553c1e94c29dd3522d1a964f824dfb80"
+    options:
+      - "yum install"
+      - "apt-get install"
+      - "zypper install"
+      - "rpm install"
+    answer: 2
+    why: "apt‑get ist Standard‑Paketmanager auf Debian‑basierten Systemen."
+
+  - question: "Welches Kommando aktualisiert Paketlisten?"
+    hash: "61f1bc49c9bb7f3b21d6ed41e6d9b39d"
+    options:
+      - "apt-get update"
+      - "apt-get upgrade"
+      - "apt-get install"
+      - "apt-get remove"
+    answer: 1
+    why: "update lädt neue Paketlisten."
+
+  - question: "Welches Kommando aktualisiert installierte Pakete?"
+    hash: "d07fdd8a693cda9e1b7c87be6091dfbc"
+    options:
+      - "apt-get update"
+      - "apt-get upgrade"
+      - "apt-get refresh"
+      - "apt-get fetch"
+    answer: 2
+    why: "upgrade installiert neuere Versionen vorhandener Pakete."
+
+  - question: "Welcher Befehl zeigt alle aktiven Dienste (systemd)?"
+    hash: "60ddf08b219c9756bc4fcaf4f66cbbd3"
+    options:
+      - "systemctl status"
+      - "systemctl list-units --type=service"
+      - "service --status-all"
+      - "initctl list"
+    answer: 2
+    why: "list-units zeigt Einheiten eines bestimmten Typs."
+
+  - question: "Welche Datei enthält Benutzer‑Gruppeneinträge?"
+    hash: "d25a702d41d0be89672a9841507ceb9b"
+    options:
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "/etc/group"
+      - "/etc/gshadow"
+    answer: 3
+    why: "/etc/group enthält Gruppendefinitionen."
+
+  - question: "Wie legt man eine neue Gruppe an?"
+    hash: "66e7db28dc41ea95c2520022bde18576"
+    options:
+      - "groupadd name"
+      - "addgroup name"
+      - "newgroup name"
+      - "group new name"
+    answer: 1
+    why: "groupadd ist Standard‑Kommando."
+
+  - question: "Welcher Befehl zeigt Anmeldeversuche (Auth‑Logs)?"
+    hash: "0982d5ff144d540520222d11c2b3c922"
+    options:
+      - "journalctl -u ssh.service"
+      - "grep auth /var/log/auth.log"
+      - "dmesg"
+      - "last"
+    answer: 2
+    why: "auth.log enthält Authentifizierungs‑Events."
+
+  - question: "Wie zeigt man An- und Abmeldevorgänge eines Nutzers?"
+    hash: "2603260bfd0abad99c9fb16122ede09f"
+    options:
+      - "last"
+      - "who"
+      - "w"
+      - "lastlog"
+    answer: 1
+    why: "last zeigt vergangene Sessions."
+
+  - question: "Welches Tool zeigt eingeloggte Nutzer und deren Aktivität?"
+    hash: "2d6fbeaff1fcd53b9d5248337eba9a48"
+    options:
+      - "who"
+      - "w"
+      - "users"
+      - "finger"
+    answer: 2
+    why: "w zeigt Nutzer + Prozesse."
+
+  - question: "Womit ändert man Shell eines Benutzers?"
+    hash: "60e27fdccd84a4d1bbbebb50009f5a91"
+    options:
+      - "chsh"
+      - "usermod"
+      - "passwd"
+      - "useradd"
+    answer: 1
+    why: "chsh ändert die Login‑Shell."
+
+  - question: "Welcher Befehl zeigt CPU‑Last pro Core?"
+    hash: "161775fa7a7dae081198f64a67fd76fa"
+    options:
+      - "mpstat"
+      - "top"
+      - "ps"
+      - "htop"
+    answer: 1
+    why: "mpstat zeigt per‑CPU‑Statistiken."
+
+  - question: "Welches Tool zeigt Block‑Geräte?"
+    hash: "7b16097797ec8268ec8cdc0e9cc88bfa"
+    options:
+      - "fdisk -l"
+      - "lsblk"
+      - "blkid"
+      - "parted"
+    answer: 2
+    why: "lsblk listet Geräte in Baumstruktur."
+
+  - question: "Welches Tool zeigt UUID eines Dateisystems?"
+    hash: "cd78dd6ab98758acc8dc35f9c9017dfc"
+    options:
+      - "blkid"
+      - "lsblk"
+      - "fdisk"
+      - "mount"
+    answer: 1
+    why: "blkid zeigt UUID und Typ."
+
+  - question: "Wie springt man in der Shell in den Hintergrund?"
+    hash: "a745c9bab6945042932544b3f067c67f"
+    options:
+      - "strg+Z"
+      - "ctrl+C"
+      - "fg"
+      - "bg"
+    answer: 1
+    why: "Strg+Z stoppt Job und legt ihn in Hintergrund."
+
+  - question: "Welcher Befehl setzt einen gestoppten Job im Hintergrund fort?"
+    hash: "a8033076c3ec8f89a2ffaf1fea36d75a"
+    options:
+      - "bg"
+      - "fg"
+      - "jobs"
+      - "kill"
+    answer: 1
+    why: "bg leitet einen gestoppten Job fort im Hintergrund."
+
+  - question: "Welches Kommando listet Hintergrund‑Jobs auf?"
+    hash: "25552734de2c7e5119b464c33f52737e"
+    options:
+      - "jobs"
+      - "ps"
+      - "bg"
+      - "fg"
+    answer: 1
+    why: "jobs zeigt laufende Jobs dieser Shell."
+
+  - question: "Wie beendet man alle Instanzen eines Prozesses per Name?"
+    hash: "ca78973d390c87a3954a43ed767cf005"
+    options:
+      - "killall name"
+      - "kill name"
+      - "pkill name"
+      - "xkill"
+    answer: 1
+    why: "killall tötet Prozesse nach Namen."
+
+  - question: "Welcher Befehl tötet Prozesse nach Name mit Pattern?"
+    hash: "7360b90c95c7938f5e80a02f07ab0a86"
+    options:
+      - "killall"
+      - "pkill"
+      - "kill"
+      - "killp"
+    answer: 2
+    why: "pkill erlaubt reguläre Ausdrücke."
+
+  - question: "Welcher Befehl zeigt Verzeichnisinhalt sortiert nach Datum?"
+    hash: "ef9f357a7a1e371aadc88ccb0ea3f18f"
+    options:
+      - "ls -lt"
+      - "ls -lh"
+      - "ls -la"
+      - "ls -lr"
+    answer: 1
+    why: "-t sortiert nach Änderungszeit."
+
+  - question: "Wie findet man Dateien nach Name?"
+    hash: "a7f7fc32bc12e569f80e982a8e1707bd"
+    options:
+      - "grep"
+      - "locate"
+      - "find"
+      - "whereis"
+    answer: 3
+    why: "find kann Verzeichnis rekursiv durchsuchen."
+
+  - question: "Welcher Befehl durchsucht Dateien nach Suchmuster?"
+    hash: "93431120713ed73d05c72e356239a721"
+    options:
+      - "find"
+      - "grep"
+      - "locate"
+      - "which"
+    answer: 2
+    why: "grep durchsucht Inhalte nach Muster."
+
+  - question: "Wie aktualisiert man die locate‑Datenbank?"
+    hash: "d4cbdedec458b04a463b45e3bd46f20d"
+    options:
+      - "updatedb"
+      - "locate --update"
+      - "find --updatedb"
+      - "updatedb locate"
+    answer: 1
+    why: "updatedb baut Datenbank neu auf."
+
+  - question: "Welcher Befehl zeigt Pfad zum Programm?"
+    hash: "a451c546e10cd789389f6a4cc7affb3d"
+    options:
+      - "which prog"
+      - "whereis prog"
+      - "type prog"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen unterschiedliche Pfadangaben."
+
+  - question: "Welcher Befehl zeigt ausführbare Datei eines Befehls?"
+    hash: "2d0b7da136d888e214a3e6b4fec5f666"
+    options:
+      - "which"
+      - "type"
+      - "locate"
+      - "whereis"
+    answer: 2
+    why: "type zeigt Art und Ort."
+
+  - question: "Wie zeigt man Datum in der Shell?"
+    hash: "65a665ab42e5a0a54ea9fecdced73fbf"
+    options:
+      - "time"
+      - "date"
+      - "now"
+      - "calendar"
+    answer: 2
+    why: "date zeigt aktuelles Datum/Uhrzeit."
+
+  - question: "Welcher Befehl belegt/verfügbaren Speicher (SWAP)?"
+    hash: "2bdaeb4e2269bc97173404b6f4726571"
+    options:
+      - "swapon --show"
+      - "free"
+      - "vmstat"
+      - "top"
+    answer: 1
+    why: "swapon --show listet aktiven Swap."
+
+  - question: "Wie aktiviert man Swap‑Datei?"
+    hash: "18caf5c787b1344bdf659263c8cd11cd"
+    options:
+      - "swapon /swapfile"
+      - "activate swapfile"
+      - "mkswapfile"
+      - "enable swapfile"
+    answer: 1
+    why: "swapon aktiviert eine Swap‑Datei/Partition."
+
+  - question: "Welcher Befehl erstellt eine Swap‑Datei?"
+    hash: "26ed0dcecbbb782004c4061d296e6ac5"
+    options:
+      - "mkswap"
+      - "mkfs.swap"
+      - "dd if=/dev/zero of=/swapfile"
+      - "swapon --create"
+    answer: 1
+    why: "mkswap formatiert Swap."
+
+  - question: "Welches Kommando wandelt Swap‑Partition um?"
+    hash: "07fc818dd826c8f28a676c4ae090c559"
+    options:
+      - "mkswap"
+      - "mkfs.ext4"
+      - "swapoff"
+      - "swapon"
+    answer: 1
+    why: "mkswap bereitet Swap‑Partition vor."
+
+  - question: "Welches Kommando deaktiviert Swap?"
+    hash: "4c7fcdfb710d2127bd9c5186de08ce42"
+    options:
+      - "swapoff"
+      - "swapon"
+      - "mkswap"
+      - "kill swap"
+    answer: 1
+    why: "swapoff deaktiviert Swap‑Medium."
+
+  - question: "Welcher Befehl ändert Dateirechte rekursiv?"
+    hash: "fee1c90ac5873eab1fd1cd1dd15975f1"
+    options:
+      - "chmod -R"
+      - "chown -r"
+      - "chmod -r"
+      - "chown -R"
+    answer: 1
+    why: "-R steht für rekursiv."
+
+  - question: "Welcher Befehl ändert Eigentümer rekursiv?"
+    hash: "3be344a35b7d471382a0614b88cd0037"
+    options:
+      - "chown -R"
+      - "chown -r"
+      - "chmod -R"
+      - "chgrp -R"
+    answer: 1
+    why: "-R geht rekursiv durch Unterverzeichnisse."
+
+  - question: "Wie zeigt man freie Inode‑Zahl eines Dateisystems?"
+    hash: "acb7a69662f1e580bb64f5645a531f83"
+    options:
+      - "df -i"
+      - "df -h"
+      - "du -i"
+      - "ls -i"
+    answer: 1
+    why: "df -i zeigt Inodes, nicht Speicherplatz."
+
+  - question: "Welcher Befehl mountet ISO‑Datei ohne Brennen?"
+    hash: "5338b914cdac2ab39c8089086641d9dc"
+    options:
+      - "mount -o loop iso.iso /mnt"
+      - "burn iso.iso /mnt"
+      - "udisksctl loop-setup"
+      - "looop mount iso.iso"
+    answer: 1
+    why: "-o loop erlaubt ISO‑Mount ohne physische Medien."
+
+  - question: "Wie zeigt man Mount‑Punkte?"
+    hash: "b09c69029e32fa0408581a4caffdbcd8"
+    options:
+      - "mount"
+      - "df"
+      - "lsblk"
+      - "blkid"
+    answer: 1
+    why: "mount zeigt list of mounted file systems."
+
+  - question: "Welcher Befehl zeigt Dateisystemtyp der gemounteten Laufwerke?"
+    hash: "6b2fe3d6810ac04e329866a47bba58ed"
+    options:
+      - "mount"
+      - "df -T"
+      - "lsblk"
+      - "blkid"
+    answer: 2
+    why: "df -T zeigt Typ und Nutzung."
+
+  - question: "Welches Tool zeigt kernelthreads?"
+    hash: "696d6ebbe57df57bef62d17e585e6c36"
+    options:
+      - "ps -ef"
+      - "htop"
+      - "pstree"
+      - "ps axu"
+    answer: 1
+    why: "ps -ef zeigt alle Prozesse inkl. Threads."
+
+  - question: "Welches Kommando zeigt nur root‑Prozesse?"
+    hash: "cbce4a56cd0542cd63638bfe3e6a37b7"
+    options:
+      - "ps -U root"
+      - "grep root"
+      - "ps aux | grep root"
+      - "ps -u root"
+    answer: 1
+    why: "ps -U root filtert nach Benutzer‑ID root."
+
+  - question: "Welcher Befehl zeigt nur Prozesse eines Nutzers?"
+    hash: "cf7f43f5a778d8e62b5349d09b385d4c"
+    options:
+      - "ps -u user"
+      - "ps U user"
+      - "ps -U user"
+      - "Alle oben"
+    answer: 4
+    why: "Alle Varianten erlauben Filter nach User."
+
+  - question: "Welches Kommando zeigt process‑tree und CPU‑Nutzung kombiniert?"
+    hash: "e6ff773343e5d4acea319ca8984cc1ec"
+    options:
+      - "pstree"
+      - "htop"
+      - "ps"
+      - "top"
+    answer: 2
+    why: "htop zeigt ausführlich CPU, Prozesse und Tree."
+
+  - question: "Welche Datei legt lokale Netzwerkkonfiguration (Hostname) fest?"
+    hash: "1af01d396d043e9e101e06aeb72237d8"
+    options:
+      - "/etc/hosts"
+      - "/etc/hostname"
+      - "/etc/networks"
+      - "/etc/resolv.conf"
+    answer: 2
+    why: "/etc/hostname enthält Hostnamen."
+
+  - question: "Wo werden Hostnamen zu IPs aufgelöst?"
+    hash: "d5f6155a3fd368373057f4aeb7a7b032"
+    options:
+      - "/etc/hosts"
+      - "/etc/hostname"
+      - "/etc/resolv.conf"
+      - "/etc/networks"
+    answer: 1
+    why: "/etc/hosts mappt Namen direkt zu IPs."
+
+  - question: "Welche Datei enthält DNS‑Server‑Adressen?"
+    hash: "0a4588d8e205c0217be39915f973bd17"
+    options:
+      - "/etc/hosts"
+      - "/etc/resolv.conf"
+      - "/etc/nsswitch.conf"
+      - "/etc/networks"
+    answer: 2
+    why: "/etc/resolv.conf enthält DNS‑Server."
+
+  - question: "Welche Datei steuert Namensauflösungsreihenfolge?"
+    hash: "1dcf0dc15a1e8299f731030574f3d564"
+    options:
+      - "/etc/nsswitch.conf"
+      - "/etc/hosts"
+      - "/etc/resolv.conf"
+      - "/etc/hostname"
+    answer: 1
+    why: "nsswitch.conf legt Reihenfolge wie hosts, DNS."
+
+  - question: "Welches Tool zeigt alle aktiven Prozesse sortiert?"
+    hash: "379c44bb394c37f491906a6b51db5c86"
+    options:
+      - "ps aux --sort=-%cpu"
+      - "top -o %CPU"
+      - "htop"
+      - "Alle oben"
+    answer: 4
+    why: "Alle erlauben Sortierung nach CPU‑Nutzung."
+
+  - question: "Wie weckt man den Rechner von suspend?"
+    hash: "a788b74e5e29aaceb838f4b69b0f6ae9"
+    options:
+      - "power button"
+      - "Networkboot"
+      - "RTC‑Alarm"
+      - "USB‑Gerät"
+    answer: 1
+    why: "Power‑Button ist Standard‑Wake‑Mechanismus."
+
+  - question: "Welcher Mechanismus erlaubt Zeitplan‑Wake‑up (RTC)?"
+    hash: "05fe8232bc02cdb56c7ebd6398fe5776"
+    options:
+      - "cron"
+      - "at"
+      - "rtcwake"
+      - "systemd‑timer"
+    answer: 3
+    why: "rtcwake plant Aufwecken zur bestimmten Zeit."
+
+  - question: "Welcher Befehl zeigt aktive Netzwerkinterfaces?"
+    hash: "1fce1d5d40d2be7042fcd8ea9c476be2"
+    options:
+      - "ifconfig"
+      - "ip link show"
+      - "ifconfig -a"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen Interfaces, ip ist modern."
+
+  - question: "Welches Kommando aktiviert Interface eth0?"
+    hash: "624f798c75cdd71ef7e5387dfef1b2d4"
+    options:
+      - "ifconfig eth0 up"
+      - "ifup eth0"
+      - "ip link set eth0 up"
+      - "Alle oben"
+    answer: 4
+    why: "Alle Varianten aktivieren Interface."
+
+  - question: "Welcher Befehl zeigt Routing‑Tabelle modern?"
+    hash: "be4fee74a9a4f6e2d1962dd3cce31378"
+    options:
+      - "ip route show"
+      - "route -n"
+      - "netstat -r"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen Routing‑Tabelle, ip ist präferiert."
+
+  - question: "Welcher Befehl zeigt offene UDP‑Sektionen?"
+    hash: "06f714f64074b168ac9e41b5879ba799"
+    options:
+      - "netstat -un"
+      - "lsof -i udp"
+      - "ss -u"
+      - "Alle oben"
+    answer: 4
+    why: "Alle zeigen UDP‑Verbindungen."
+
+  - question: "Wie prüft man DNS‑Auflösung eines Namens?"
+    hash: "59660e209ec40fa951bf40cef9e41e83"
+    options:
+      - "nslookup domain"
+      - "dig domain"
+      - "host domain"
+      - "Alle oben"
+    answer: 4
+    why: "Alle Tools lösen DNS‑Anfragen auf."
+
+  - question: "Welcher Befehl zeigt IPTables‑Regeln (IPv4)?"
+    hash: "267fcb97745820f7a659fb950e273997"
+    options:
+      - "iptables -L"
+      - "nft list ruleset"
+      - "ufw status"
+      - "firewall-cmd --list-all"
+    answer: 1
+    why: "iptables -L zeigt bestehende Regeln IPv4."
+
+  - question: "Welcher Befehl zeigt Regeln von nftables?"
+    hash: "1dd6ddfda150a09089374cf630fa05d1"
+    options:
+      - "nft list ruleset"
+      - "iptables -L"
+      - "ufw status"
+      - "firewall-cmd"
+    answer: 1
+    why: "nft list ruleset zeigt nftables‑Regeln."
+
+  - question: "Welcher Firewall‑Dienst ist bei RHEL/CentOS Standard?"
+    hash: "68aef48e56279ff5b9d785b975e045af"
+    options:
+      - "iptables"
+      - "nftables"
+      - "firewalld"
+      - "ufw"
+    answer: 3
+    why: "firewalld ist Standard‑Frontend in RHEL‑Systemen."
+
+  - question: "Welcher Befehl zeigt aktive DAemons beim SysV‑Init?"
+    hash: "a37766b49258528cbaa8baa139276623"
+    options:
+      - "service --status-all"
+      - "systemctl list-units"
+      - "chkconfig --list"
+      - "init.d --status"
+    answer: 1
+    why: "service --status-all zeigt Dienste in SysV‑Init."
